@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 
@@ -11,20 +10,20 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>IT Sem 1 Gpa calculator</title>
-
+ 
 </head>
 
 <body style="background-color: #484848">
-
+ 
     <div class="container bg-dark mx-auto" style="width: 80%;">
         <!-- Content here -->
         <h3 class="text-white bg-dark" style="font-family:courier,arial,helvetica;text-align: center;"> Gpa calculator
             For IT Semester 1 </h3>
         <p class="text-right">
 
-            <a class="text-light text-right" href="index.php" />HOME</a>
+            <a class="text-light text-right" href="ITSem1.html" >HOME</a>
         </p>
-        <form method="POST" class="text-white pl-5 lead font-weight-normal pr-5 pt-2" id="selva" />
+        <form class="text-white pl-5 lead font-weight-normal pr-5 pt-2" id="selva" >
 
         Choose the grade of Communicative English (HS8151)
 
@@ -99,6 +98,7 @@
         <div class="text-center pt-3 pb-2">
             <input type="submit" class="btn btn-primary" name="submit" value="Submit" onclick="calculategpa()" />
         </div>
+        </form>
         <div class="text-justify  ">
             </div>
 
@@ -118,11 +118,10 @@
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
                 integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
                 crossorigin="anonymous"></script>
-                <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+     
                 <script>
                     function calculategpa() {
-                        swal("Hello world!");
-
+                        
                         $i = 1;
                         $no = 10;
                         $s11 = 0;
@@ -393,17 +392,12 @@
                         $totcredit = $sumcredits1 + $sumcredits2 + $sumcredits3 + $sumcredits4 + $sumcredits5 + $sumcredits6 + $sumcredits7 + $sumcredits8;
                         $divider = $credits1 + $credits2 + $credits3 + $credits4 + $credits5 + $credits6 + $credits7 + $credits8;
                         if ($divider > 0) {
-    
                             $gpa = $totcredit / $divider;
-    
-                            swal("Here's the title!", "...and here's the text!"); }
+                            alert("The Gpa is " + $gpa +"  The Credits you have earned is " + $totcredit);
+                        }
+
                     } 
                 </script>
-    
-    
-    
-    
-
 </body>
 
 </html>
