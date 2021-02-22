@@ -9,119 +9,102 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>IT Sem 1 Gpa calculator</title>
- 
+
+    <title>IT Sem 2 Gpa calculator</title>
 </head>
 
 <body style="background-color: #484848">
- 
+
     <div class="container bg-dark mx-auto" style="width: 80%;">
         <!-- Content here -->
         <h3 class="text-white bg-dark" style="font-family:courier,arial,helvetica;text-align: center;"> Gpa calculator
-            For IT Semester 1 </h3>
+            For IT Semester 2 </h3>
         <p class="text-right">
 
-            <a class="text-light text-right" href="index.html" >HOME</a>
+            <a class="text-light text-right" href="index.html">HOME</a>
         </p>
-        <form class="text-white pl-5 lead font-weight-normal pr-5 pt-2" id="selva" >
+        <form  class="text-white pl-5 lead font-weight-normal pr-5 pt-2">
 
-        Choose the grade of Communicative English (HS8151)
-
-        <select id="sub1" class="form-control">
-            <option>O</option>
-            <option>A+</option>
-            <option>A</option>
-            <option>B+</option>
-            <option>B</option>
-            <option>U</option>
-        </select>
-
-
-
-        Choose the grade of Mathematics I (MA8151)
-        <select id="sub2" class="form-control">
-            <option>O</option>
-            <option>A+</option>
-            <option>A</option>
-            <option>B+</option>
-            <option>B</option>
-            <option>U</option>
-        </select>
-        Choose the grade of Engineering Physics (PH8151)<select id="sub3" class="form-control">
-            <option>O</option>
-            <option>A+</option>
-            <option>A</option>
-            <option>B+</option>
-            <option>B</option>
-            <option>U</option>
-        </select>
-        Choose the grade of Engineering Chemistry (CY8151)<select id="sub4" class="form-control">
-            <option>O</option>
-            <option>A+</option>
-            <option>A</option>
-            <option>B+</option>
-            <option>B</option>
-            <option>U</option>
-        </select>
-        Choose the grade of Problem Solving Python Programming (GE8151)<select id="sub5" class="form-control">
-            <option>O</option>
-            <option>A+</option>
-            <option>A</option>
-            <option>B+</option>
-            <option>B</option>
-            <option>U</option>
-        </select>
-        Choose the grade of Engineering Graphics (GE8152)<select id="sub6" class="form-control">
-            <option>O</option>
-            <option>A+</option>
-            <option>A</option>
-            <option>B+</option>
-            <option>B</option>
-            <option>U</option>
-        </select>
-        Choose the grade of Problem Solving Python Laboratory (GE8161)<select id="lab1" class="form-control">
-            <option>O</option>
-            <option>A+</option>
-            <option>A</option>
-            <option>B+</option>
-            <option>B</option>
-            <option>U</option>
-        </select>
-        Choose the grade of Physics Chemistry Laboratory (CY8161)<select id="lab2" class="form-control ">
-            <option> O</option>
-            <option>A+</option>
-            <option>A</option>
-            <option>B+</option>
-            <option>B</option>
-            <option>U</option>
-        </select>
-        <div class="text-center pt-3 pb-2">
-            <input type="submit" class="btn btn-primary" name="submit" value="Submit" onclick="calculategpa()" />
-        </div>
-        </form>
-        <div class="text-justify  ">
+            choose the grade of Technical English (HS8251)<select id="sub1" class="form-control">
+                <option>O</option>
+                <option>A+</option>
+                <option>A</option>
+                <option>B+</option>
+                <option>B</option>
+                <option>U</option>
+            </select>
+            choose the grade of Mathematics II (MA8251)<select id="sub2" class="form-control">
+                <option>O</option>
+                <option>A+</option>
+                <option>A</option>
+                <option>B+</option>
+                <option>B</option>
+                <option>U</option>
+            </select>
+            choose the grade of Information Physics (PH8652)<select id="sub3" class="form-control">
+                <option>O</option>
+                <option>A+</option>
+                <option>A</option>
+                <option>B+</option>
+                <option>B</option>
+                <option>U</option>
+            </select>
+            choose the grade of Basic Electrical Electronic Measurement Engineering (BE8255)<select id="sub4"
+                class="form-control">
+                <option>O</option>
+                <option>A+</option>
+                <option>A</option>
+                <option>B+</option>
+                <option>B</option>
+                <option>U</option>
+            </select>
+            choose the grade of Information Technology Essentials (IT8201)<select id="sub5" class="form-control">
+                <option>O</option>
+                <option>A+</option>
+                <option>A</option>
+                <option>B+</option>
+                <option>B</option>
+                <option>U</option>
+            </select>
+            choose the grade of progrmming in c (CS8251)<select id="sub6" class="form-control">
+                <option>O</option>
+                <option>A+</option>
+                <option>A</option>
+                <option>B+</option>
+                <option>B</option>
+                <option>U</option>
+            </select>
+            choose the grade of Engineering Practices Lab lab (GE8261)<select id="lab1" class="form-control">
+                <option>O</option>
+                <option>A+</option>
+                <option>A</option>
+                <option>B+</option>
+                <option>B</option>
+                <option>U</option>
+            </select>
+            choose the grade of c lab (CS8261)<select id="lab2" class="form-control">
+                <option> O</option>
+                <option>A+</option>
+                <option>A</option>
+                <option>B+</option>
+                <option>B</option>
+                <option>U</option>
+            </select>
+            choose the grade of ite lab (IT8211)<select id="lab3" class="form-control">
+                <option>O</option>
+                <option>A+</option>
+                <option>A</option>
+                <option>B+</option>
+                <option>B</option>
+                <option>U</option>
+            </select>
+            <div class="text-center pt-3 pb-2">
+                <input type="submit" class="btn btn-primary" name="submit" value="Submit" onclick="calculategpa()" />
             </div>
+            <div class="text-justify  ">
 
-        <p class="text-right">
-            Selva
-        </p>
-
-    </div>
-            <!-- Optional JavaScript -->
-            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-                crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-                crossorigin="anonymous"></script>
-     
                 <script>
                     function calculategpa() {
-                        
                         $i = 1;
                         $no = 10;
                         $s11 = 0;
@@ -132,6 +115,7 @@
                         $s66 = 0;
                         $l11 = 0;
                         $l22 = 0;
+                        $l33 = 0;
                         $credits1 = 0;
                         $credits2 = 0;
                         $credits3 = 0;
@@ -149,9 +133,10 @@
                         $sub3 = 3;
                         $sub4 = 3;
                         $sub5 = 3;
-                        $sub6 = 4;
+                        $sub6 = 3;
                         $sub7 = 2;
                         $sub8 = 2;
+                        $sub9 = 1;
                         var e1 = document.getElementById("sub1");
                         var $s1 = e1.value;
                         var e2 = document.getElementById("sub2");
@@ -168,67 +153,76 @@
                         var $l1 = e7.value;
                         var e8 = document.getElementById("lab2");
                         var $l2 = e8.value;
-                        if ($s1 == 'O') 
+                        var e9 = document.getElementById("lab3");
+                        var $l3 = e9.value;
+
+
+                        if ($s1 == 'O') {
                             $s11 = 10;
-                        
-                        if ($s2 == 'O') 
+                        }
+                        if ($s2 == 'O') {
                             $s22 = 10;
-                        
-                        if ($s3 == 'O') 
+                        }
+                        if ($s3 == 'O') {
                             $s33 = 10;
-                        
-                        if ($s4 == 'O') 
+                        }
+                        if ($s4 == 'O') {
                             $s44 = 10;
-                        
-                        if ($s5 == 'O') 
+                        }
+                        if ($s5 == 'O') {
                             $s55 = 10;
-                        
-                        if ($s6 == 'O') 
+                        }
+                        if ($s6 == 'O') {
                             $s66 = 10;
-                        
-                        if ($l1 == 'O') 
+                        }
+                        if ($l1 == 'O') {
                             $l11 = 10;
-                        
-                        if ($l2 == 'O') 
+                        }
+                        if ($l2 == 'O') {
                             $l22 = 10;
-                        
-    
+                        }
+                        if ($l3 == 'O') {
+                            $l33 = 10;
+                        }
                         //grade 2
-                        if ($s1 == 'A+') 
+                        if ($s1 == 'A+') {
                             $s11 = 9;
-                        
-                        if ($s2 == 'A+') 
+                        }
+                        if ($s2 == 'A+') {
                             $s22 = 9;
-                        
-                        if ($s3 == 'A+') 
+                        }
+                        if ($s3 == 'A+') {
                             $s33 = 9;
-                        
-                        if ($s4 == 'A+') 
+                        }
+                        if ($s4 == 'A+') {
                             $s44 = 9;
-                        
-                        if ($s5 == 'A+') 
+                        }
+                        if ($s5 == 'A+') {
                             $s55 = 9;
-                    
-                        if ($s6 == 'A+') 
+                        }
+                        if ($s6 == 'A+') {
                             $s66 = 9;
-                        
-                        if ($l1 == 'A+') 
+                        }
+                        if ($l1 == 'A+') {
                             $l11 = 9;
-                        
-                        if ($l2 == 'A+') 
+                        }
+                        if ($l2 == 'A+') {
                             $l22 = 9;
-                        
+                        }
+                        if ($l3 == 'A+') {
+                            $l33 = 9;
+                        }
                         //grade 2 ends
                         //grade 3 starts
-                        if ($s1 == 'A') 
+                        if ($s1 == 'A') {
                             $s11 = 8;
-                        
-                        if ($s2 == 'A') 
+                        }
+                        if ($s2 == 'A') {
                             $s22 = 8;
-                        
-                        if ($s3 == 'A') 
+                        }
+                        if ($s3 == 'A') {
                             $s33 = 8;
-                        
+                        }
                         if ($s4 == 'A') {
                             $s44 = 8;
                         }
@@ -243,6 +237,9 @@
                         }
                         if ($l2 == 'A') {
                             $l22 = 8;
+                        }
+                        if ($l3 == 'A') {
+                            $l33 = 8;
                         }
                         //GRADE 3 ENDS
                         ///GRADE 4 STARTS
@@ -270,6 +267,9 @@
                         if ($l2 == 'B+') {
                             $l22 = 7;
                         }
+                        if ($l3 == 'B+') {
+                            $l33 = 7;
+                        }
                         //GRADE 4 ENDS
                         //GRADE 5 STARTS
                         if ($s1 == 'B') {
@@ -296,11 +296,14 @@
                         if ($l2 == 'B') {
                             $l22 = 6;
                         }
+                        if ($l3 == 'B') {
+                            $l33 = 6;
+                        }
                         //GRADE 5 ENDS
                         //GRADE 6 STARTS
                         if ($s1 == 'U') {
                             $s11 = 0;
-    
+
                         }
                         if ($s2 == 'U') {
                             $s22 = 0;
@@ -322,6 +325,9 @@
                         }
                         if ($l2 == 'U') {
                             $l22 = 0;
+                        }
+                        if ($l3 == 'U') {
+                            $l33 = 0;
                         }
                         //to find the total creidts
                         //s1
@@ -361,10 +367,10 @@
                         }
                         //s6
                         if ($s66 > 0) {
-                            $credits6 = 4;
+                            $credits6 = 3;
                         }
                         else {
-                            $credits6 = 0;
+                            $credits7 = 0;
                         }
                         //l1
                         if ($l11 > 0) {
@@ -380,7 +386,13 @@
                         else {
                             $credits8 = 0;
                         }
-    
+                        //l3
+                        if ($l33 > 0) {
+                            $credits9 = 1;
+                        }
+                        else {
+                            $credits9 = 0;
+                        }
                         $sumcredits1 = $sub1 * $s11;
                         $sumcredits2 = $sub2 * $s22;
                         $sumcredits3 = $sub3 * $s33;
@@ -389,15 +401,37 @@
                         $sumcredits6 = $sub6 * $s66;
                         $sumcredits7 = $sub7 * $l11;
                         $sumcredits8 = $sub8 * $l22;
-                        $totcredit = $sumcredits1 + $sumcredits2 + $sumcredits3 + $sumcredits4 + $sumcredits5 + $sumcredits6 + $sumcredits7 + $sumcredits8;
-                        $divider = $credits1 + $credits2 + $credits3 + $credits4 + $credits5 + $credits6 + $credits7 + $credits8;
+                        $sumcredits9 = $sub9 * $l33;
+                        $totcredit = $sumcredits1 + $sumcredits2 + $sumcredits3 + $sumcredits4 + $sumcredits5 + $sumcredits6 + $sumcredits7 + $sumcredits8 + $sumcredits9;
+                        $divider = $credits1 + $credits2 + $credits3 + $credits4 + $credits5 + $credits6 + $credits7 + $credits8 + $credits9;
                         if ($divider > 0) {
                             $gpa = $totcredit / $divider;
-                            alert("The Gpa is " + $gpa +"  The Credits you have earned is " + $totcredit);
+                            alert("The Gpa is " + $gpa + "  The Credits you have earned is " + $totcredit);
                         }
 
                     } 
                 </script>
+
+                <!-- Optional JavaScript -->
+                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                    crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                    crossorigin="anonymous"></script>
+
+            </div>
+
+            <p class="text-right">
+                Selva
+            </p>
+
+    </div>
+
 </body>
 
 </html>
