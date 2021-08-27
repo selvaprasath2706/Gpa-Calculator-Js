@@ -97,6 +97,15 @@
             <option>B</option>
             <option>U</option>
         </select>
+    </select>
+    choose the grade of Professional Communication (HS8581)<select id="lab4" class="form-control">
+        <option>O</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>U</option>
+    </select>
         <div class="text-center pt-3 pb-2">
             <input type="submit" class="btn btn-primary" name="submit" value="Submit" onclick="calculategpa()" />
         </div>
@@ -114,6 +123,7 @@
                     $l11 = 0;
                     $l22 = 0;
                     $l33 = 0;
+                    $l44 = 0;
                     $credits1 = 0;
                     $credits2 = 0;
                     $credits3 = 0;
@@ -123,6 +133,7 @@
                     $credits7 = 0;
                     $credits8 = 0;
                     $credits9 = 0;
+                    $credits10 = 0;
                     $sumcredits = 0;
                     $totcredits = 0;
                     $divider = 1;
@@ -135,6 +146,7 @@
                     $sub7 = 2;
                     $sub8 = 2;
                     $sub9 = 1;
+                    $sub10 = 1;
                     var e1 = document.getElementById("sub1");
                     var $s1 = e1.value;
                     var e2 = document.getElementById("sub2");
@@ -153,6 +165,9 @@
                     var $l2 = e8.value;
                     var e9 = document.getElementById("lab3");
                     var $l3 = e9.value;
+                    var e10 = document.getElementById("lab4");
+                    var $l4 = e10.value;
+
 
                     if ($s1 == 'O') {
                         $s11 = 10;
@@ -181,6 +196,9 @@
                     if ($l3 == 'O') {
                         $l33 = 10;
                     }
+                    if ($l4 == 'O') {
+                        $l44 = 10;
+                    }
                     //grade 2
                     if ($s1 == 'A+') {
                         $s11 = 9;
@@ -208,6 +226,9 @@
                     }
                     if ($l3 == 'A+') {
                         $l33 = 9;
+                    }
+                    if ($l4 == 'A+') {
+                        $l44 = 9;
                     }
                     //grade 2 ends
                     //grade 3 starts
@@ -238,6 +259,9 @@
                     if ($l3 == 'A') {
                         $l33 = 8;
                     }
+                    if ($l4 == 'A') {
+                        $l44 = 8;
+                    }
                     //GRADE 3 ENDS
                     ///GRADE 4 STARTS
                     if ($s1 == 'B+') {
@@ -266,6 +290,9 @@
                     }
                     if ($l3 == 'B+') {
                         $l33 = 7;
+                    }
+                    if ($l4 == 'B+') {
+                        $l44 = 7;
                     }
                     //GRADE 4 ENDS
                     //GRADE 5 STARTS
@@ -296,6 +323,9 @@
                     if ($l3 == 'B') {
                         $l33 = 6;
                     }
+                    if ($l4 == 'B') {
+                        $l44 = 6;
+                    }
                     //GRADE 5 ENDS
                     //GRADE 6 STARTS
                     if ($s1 == 'U') {
@@ -325,6 +355,9 @@
                     }
                     if ($l3 == 'U') {
                         $l33 = 0;
+                    }
+                    if ($l4 == 'U') {
+                        $l44 = 0;
                     }
                     //to find the total creidts
                     //s1
@@ -390,6 +423,13 @@
                     else {
                         $credits9 = 0;
                     }
+                    //l4
+                    if ($l44 > 0) {
+                        $credits10 = 1;
+                    }
+                    else {
+                        $credits10 = 0;
+                    }
                     $sumcredits1 = $sub1 * $s11;
                     $sumcredits2 = $sub2 * $s22;
                     $sumcredits3 = $sub3 * $s33;
@@ -399,8 +439,10 @@
                     $sumcredits7 = $sub7 * $l11;
                     $sumcredits8 = $sub8 * $l22;
                     $sumcredits9 = $sub9 * $l33;
-                    $totcredit = $sumcredits1 + $sumcredits2 + $sumcredits3 + $sumcredits4 + $sumcredits5 + $sumcredits6 + $sumcredits7 + $sumcredits8 + $sumcredits9;
-                    $divider = $credits1 + $credits2 + $credits3 + $credits4 + $credits5 + $credits6 + $credits7 + $credits8 + $credits9;
+                    $sumcredits10 = $sub10 * $l44;
+
+                    $totcredit = $sumcredits1 + $sumcredits2 + $sumcredits3 + $sumcredits4 + $sumcredits5 + $sumcredits6 + $sumcredits7 + $sumcredits8 + $sumcredits9+$sumcredits10;
+                    $divider = $credits1 + $credits2 + $credits3 + $credits4 + $credits5 + $credits6 + $credits7 + $credits8 + $credits9+$credits10;
                     if ($divider > 0) {
                         $gpa = $totcredit / $divider;
                         alert("The Gpa is " + $gpa + "  The Credits you have earned is " + $totcredit);
